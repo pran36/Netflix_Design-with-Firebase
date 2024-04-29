@@ -8,7 +8,7 @@ function Banner() {
     
 
     useEffect(()=>{
-        axios.get(requests.requestPopular).then((response)=>{
+        axios.get(requests.requestTopRated).then((response)=>{
             setMovies(response.data.results)
         })
     },[])
